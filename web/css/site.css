@@ -1,0 +1,260 @@
+html,
+body {
+    height: 100%;
+}
+@font-face {
+    font-family: bebas; /* Имя шрифта */
+    src: url(../fonts/9115.ttf); /* Путь к файлу со шрифтом */
+   }
+h1,h2{
+    color: #5e83ba;
+    font-size: 22pt;
+    font-weight: 300;
+    font-family: 'bebas';
+}
+p{
+    font-family: "Roboto Condensed", Arial, serif;
+color: #727272;
+font-size: 1.2em;
+}
+
+
+.clear{
+    clear: both;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+    background: rgb(241, 241, 240) none repeat scroll 0% 0%;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+    min-width: 330px;
+}
+#header{
+    background: #3a4e7a;
+    margin: 0;
+}
+#w0{
+    border: none;
+    margin-top: 17px;
+    width: 300px;
+}
+#w0 .active a{
+    color: #000;
+    background: rgb(241, 241, 240);
+    cursor: pointer;
+}
+#w0 .active a:hover{
+    background: rgb(241, 241, 240);
+}
+#w0 li a:hover{
+    background: none;
+}
+#w0 li a{
+    border: none;
+    font-weight: bold;
+    color: #fff;
+}
+#w0 li a:focus{
+    background: none;
+}
+.header_t_block{
+    width: 330px;
+    float: left;
+}
+.wrap > .container{
+    padding: 0px 15px 20px;
+}
+.blog_container{
+    margin: auto;
+    max-width: 1000px;
+    padding: 26px 15px 20px;
+}
+.blog_container ul{
+    padding-left: 0px;
+}
+.blog_container h2,p{
+    text-align: justify;
+}
+.Article .Post_image{
+    width: 20.333%;
+    padding-left: 0;
+}
+.Article{
+    float: left;
+    color: #5e83ba;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    margin-bottom: 10px;
+}
+.Artic_title .Post_image{
+    width: 20.333%;
+}
+.handle{
+    width: 50px;
+    height: 38px;
+    background:url(../img/1_m.png);
+    float:left;
+}
+.lightsaber{
+    opacity: 0.5;
+}
+.blade{
+    width: 69.3%;
+    height: 38px;
+    background: url(../img/2_m.png);
+    float:left;
+}
+.edge{
+    width: 30px;
+    height: 38px;
+    background: url(../img/3_m.png);
+    float:left;
+}
+.Artic_date{
+    color: #959595;
+    float: right;
+}
+.Read_more{
+    font-size: 1.2em;
+    font-weight: bold;
+    max-width: 200px;
+    float:left;
+}
+.Project{
+    margin: auto;
+    max-width: 55%;
+}
+.portfolio_title{
+    text-align: center;
+}
+.Read_more:after{
+    content:'\2192';
+}
+.Article a:hover{
+    text-decoration: none;
+}
+.Article a:focus{
+    text-decoration: none;
+}
+
+.Artic_mess{
+    font-size: 1.5em;
+}
+.Article .img-thumbnail{
+    max-width: 102%;
+}
+.header_text{
+    font-size: 1.5em;
+    height: 4px;
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+}
+.navbar{
+    margin-bottom: 0px;
+}
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+.footer p{
+    text-align: center;
+}
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+@media screen and (max-width: 750px) {
+
+    .Post_image{
+        width: 140px !important;
+    }
+    .Artic_mess{
+        font-size: 1.3em;
+    }
+    .blog_container h2{
+        font-size: 18pt;
+    }
+}
+@media screen and (max-width: 588px) {
+    .logo{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 473px) {
+    .logo{
+        display: none;
+    }
+}
